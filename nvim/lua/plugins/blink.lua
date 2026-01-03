@@ -5,7 +5,7 @@ return {
       completion = {
         list = {
           selection = {
-            preselect = false, -- 🔴 THIS is the key
+            preselect = false,
           },
         },
       },
