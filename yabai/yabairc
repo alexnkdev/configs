@@ -1,0 +1,13 @@
+
+#!/bin/bash
+
+# general layout
+yabai -m config layout bsp
+yabai -m config gap 10
+yabai -m config border_width 3
+yabai -m config active_window_border_color 0xff00ff00
+yabai -m config normal_window_border_color 0xff444444
+yabai -m config window_shadow off
+
+# auto-start
+yabai -m signal --add event=window_created action="yabai -m window --focus $(yabai -m query --windows --window | jq .id)"
